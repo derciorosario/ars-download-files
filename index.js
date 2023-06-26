@@ -9,7 +9,7 @@ const XlsxPopulate = require('xlsx-populate');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.set('port', process.env.PORT || 3000)
+app.set('port',process.env.PORT || 80)
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
